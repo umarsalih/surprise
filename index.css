@@ -1,0 +1,89 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.column {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.left-column {
+    img {
+        margin-top: 30px;
+        border-radius: 15px;
+        transform: rotate(15deg);
+        filter: grayscale(100%);
+        opacity: 0;
+        transition: opacity 2.5s ease-in-out;
+    }
+
+    #sadcow, #sadracoon {
+        width: 230px;
+        height: 220px;
+        transform: rotate(-15deg);
+    }
+
+    
+}
+
+.center-column {
+    .center-column-text {
+        margin: 100px 20px;
+        opacity: 0;
+    }
+    
+
+    button {
+        padding: 1em 2em;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: white;
+        font: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: ease-in-out 0.5s;
+    }
+
+    button:hover {
+        background-color: lightskyblue;
+        color: black;
+        transition: ease-in-out 0.5s;
+    }
+}
+
+.right-column {
+    img {
+        opacity: 0;
+        transition: opacity 2.5s ease-in-out 3s;
+    }
+    
+    .pic {
+        margin-top: 30px;
+        width: 300px;
+        height: 200px;
+        border-radius: 15px;
+        transform: rotate(-15deg);
+    }
+    
+    #ourpic {
+        margin-top: 80px;
+        height: 350px;
+        width: 200px;
+        transform: rotate(15deg);
+    }
+
+    #ourhand {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 60px;
+    }
+}

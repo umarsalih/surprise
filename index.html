@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Noel</title>
+    </head>
+    <body>
+        <section id="main-body">
+            <div class="column left-column">
+                <h3>my life without u</h3>
+                <img class="animal" src="sadbear.jpg">
+                <img class="animal" id="sadcow" src="sadcow.jpg">
+                <img class="animal" id='sadracoon' src="sadracoon.jpg">
+                <img class="animal" id="sadpenguin" src="sadpenguin.jpeg">
+            </div>
+            <div class="column center-column">
+                <div class="center-column-text">
+                    <h1 class="1">Noel,</h1>
+                    <h2 class="2">idk how to describe exactly how much happier i am with u</h2>
+                    <p class="3">i dont even go an hour without thinking about u everyday</p>
+                    <p class="5">you went from being a guy i was talking to, to becoming my favorite person,</p>
+                    <p class="4">so thank u for making me so happy, and making my whole life better.</p>
+                    <p class="6">you never fail to make me smile.</p>
+                    <p class="7">but this aint some cringey message, there is another surprise waiting</p>
+                </div>
+                <button id="btn">CLICK ME</button>
+                <div></div>
+            </div>
+            <div class="column right-column">
+                <h3>my life with u</h3>
+                <img class="pic" src="happybear.jpg">
+                <img id="ourpic" src="ourpic.jpg">
+                <img id="ourhand" src="ourhands.jpg">
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const images = document.querySelectorAll("img");
+
+                images.forEach(image => {
+                    image.style.opacity = "1";
+                });
+            })
+
+            document
+                .getElementById("btn")
+                .addEventListener("click", () => {
+                    const centerColumnText = document.querySelector(".center-column-text");
+
+                    // Set initial opacity to 0 and wait for a small delay
+                    centerColumnText.style.opacity = "0";
+                    setTimeout(() => {
+                        // Set opacity to 1 after the delay
+                        centerColumnText.style.opacity = "1";
+                    }, 10);
+                });
+        </script>
+    </body>
+</html>
